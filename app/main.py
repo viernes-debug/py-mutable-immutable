@@ -16,4 +16,38 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+]
+variable_names = [
+    "lucky_number",
+    "pi",
+    "one_is_a_prime_number",
+    "name",
+    "my_favourite_films",
+    "profile_info",
+    "marks",
+    "collection_of_coins"
+]
+for name, var in zip(variable_names, variables):
+    print(f"{name}: {type(var)}")
+
+mutable_types = (list, dict, set, bytearray)
+immutable_types = (int, float, str, tuple, bool, frozenset, bytes)
+
+sorted_variables = {"mutable": [], "immutable": []}
+for var in variables:
+    if isinstance(var, mutable_types):
+        sorted_variables["mutable"].append(var)
+    elif isinstance(var, immutable_types):
+        sorted_variables["immutable"].append(var)
+
+print("\nSorted variables:")
+print(sorted_variables)
