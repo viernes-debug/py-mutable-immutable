@@ -36,10 +36,10 @@ variable_names = [
     "marks",
     "collection_of_coins"
 ]
-for name, var in zip(variable_names, variable):
+for name, var in zip(variable_names, variables):
     print(f"{name}: {type(var)}")
 
-mutable_types = (list, dict, set, bitearray)
+mutable_types = (list, dict, set, bytearray)
 immutable_types = (int, float, str, tuple, bool, frozenset, bytes)
 
 sorted_variables = {"mutable": [], "immutable": []}
