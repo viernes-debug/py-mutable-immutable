@@ -36,18 +36,18 @@ variable_names = [
     "marks",
     "collection_of_coins"
 ]
-for name, var in zip(variable_names, variables):
-    print(f"{name}: {type(var)}")
+for variable_name, variable_value in zip(variable_names, variables):
+    print(f"{variable_name}: {type(variable_value)}")
 
 mutable_types = (list, dict, set, bytearray)
 immutable_types = (int, float, str, tuple, bool, frozenset, bytes)
 
 sorted_variables = {"mutable": [], "immutable": []}
-for var in variables:
-    if isinstance(var, mutable_types):
-        sorted_variables["mutable"].append(var)
-    elif isinstance(var, immutable_types):
-        sorted_variables["immutable"].append(var)
+for variable_value in variables:
+    if isinstance(variable_value, mutable_types):
+        sorted_variables["mutable"].append(variable_value)
+    elif isinstance(variable_value, immutable_types):
+        sorted_variables["immutable"].append(variable_value)
 
 print("\nSorted variables:")
 print(sorted_variables)
