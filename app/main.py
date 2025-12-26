@@ -27,7 +27,7 @@ variables = [
     collection_of_coins
 ]
 variable_names = [
-    "lucky_number"
+    "lucky_number",
     "pi",
     "one_is_a_prime_number",
     "name",
