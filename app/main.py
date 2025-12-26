@@ -49,5 +49,5 @@ for var in variables:
     elif isinstance(var, immutable_types):
         sorted_variables["immutable"].append(var)
 
-print("n\Sorted variables:")
+print("\nSorted variables:")
 print(sorted_variables)
